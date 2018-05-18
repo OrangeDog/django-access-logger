@@ -80,7 +80,7 @@ LOGGING = {
         },
     },
     'handlers': {
-        'stdout': {
+        'stderr': {
             'class': 'logging.StreamHandler',
             'formatter': 'bare'
         },
@@ -88,7 +88,7 @@ LOGGING = {
     'loggers': {
         'django.advanced_access_logs': {
             'level': 'INFO',
-            'handlers': ['stdout'],
+            'handlers': ['stderr'],
             'propagate': False,
         },
     },
